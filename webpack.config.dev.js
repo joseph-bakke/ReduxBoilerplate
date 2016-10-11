@@ -15,7 +15,7 @@ module.exports = {
         tls: 'empty',
         dns: 'empty'
     },
-    output: {\\
+    output: {
         path: path.resolve('./dist'),
         filename: 'bundle.js',
         publicPath: '/static/',

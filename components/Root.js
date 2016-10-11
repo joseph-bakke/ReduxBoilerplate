@@ -4,10 +4,10 @@ import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import thunkMiddleware from 'redux-thunk';
 import rootReducer from 'reducers';
-import App from './App';
+import App from 'components/App';
 
 const composeEnhancers = composeWithDevTools({
-    name: 'LinkBatcher',
+    name: 'ReduxBoilerplate',
 });
 
 const store = createStore(
@@ -19,13 +19,14 @@ const store = createStore(
     )
 );
 
-
-export default React.createClass({
+class Root extends Component {
     render() {
         return (
             <Provider store={store}>
                 <App />
             </Provider>
         );
-    },
-});
+    }
+};
+
+export default Root;
