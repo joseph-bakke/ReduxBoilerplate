@@ -1,0 +1,23 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "describe": true,
+    "xdescribe": true,
+    "it": true,
+    "beforeEach": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "babel/new-cap": [0],
+    "indent": ["error", 4],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}
